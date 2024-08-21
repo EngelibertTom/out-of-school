@@ -1,95 +1,133 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+import { Button, Grid, Typography } from '@mui/material';
+import Fade from '@mui/material/Fade';
+import React, { useState } from 'react';
+import AnimatedHourglass from "@/components/animations/AnimatedHourglass";
+import Accueil from "@/components/parts/Accueil";
+import Historique from "@/components/parts/Historique";
+import Present from "@/components/parts/Present";
+import Evolutions from "@/components/parts/Evolutions";
+import AnimatedMap from "@/components/animations/AnimatedMap";
+import AnimatedEvolution from "@/components/animations/AnimatedEvolution";
+import Passe from "@/components/parts/Passe";
+import AnimatedPerception from "@/components/animations/AnimatedPerception";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    const [showAccueil, setShowAccueil] = useState(true);
+    const [showPasse, setShowPasse] = useState(false);
+    const [showHistorique, setShowHistorique] = useState(false);
+    const [showPresent, setShowPresent] = useState(false);
+    const [showEvolutions, setShowEvolutions] = useState(false);
+    // Gestion des animations
+    const [showAnimationHistorique, setShowAnimationHistorique] = useState(false);
+    const [showAnimationPresent, setShowAnimationPresent] = useState(false);
+    const [showAnimationEvolutions, setShowAnimationEvolutions] = useState(false);
+    const [showAnimationPerception, setShowAnimationPerception] = useState(false);
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    const handleClick = () => {
+        setShowAccueil(false);
+        setShowAnimationPerception(true);
+        setTimeout(() => {
+            setShowAnimationPerception(false);
+            setShowPasse(true);
+        }, 1500);
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+    };
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+    const handlePassee = () => {
+        setShowPasse(false);
+        setShowAnimationHistorique(true);
+        setTimeout(() => {
+            setShowAnimationHistorique(false);
+            setShowHistorique(true);
+        }, 1500);
+    };
+    const handleHistorique = () => {
+        setShowHistorique(false);
+        setShowAnimationPresent(true);
+        setTimeout(() => {
+            setShowAnimationPresent(false);
+            setShowPresent(true);
+        }, 1500);
+    };
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    const handlePresent = () => {
+        setShowPresent(false);
+        setShowAnimationEvolutions(true);
+        setTimeout(() => {
+            setShowAnimationEvolutions(false);
+            setShowEvolutions(true);
+        }, 1500);
+
+    };
+
+    return (
+        <Grid container sx={{ position: 'relative', minHeight: "100vh" }}>
+            {/*Gestion des animations */}
+            <Fade in={showAnimationPerception} timeout={500}>
+                <div>
+                    <AnimatedPerception show={showAnimationPerception} duration={1100} />
+                </div>
+            </Fade>
+
+            <Fade in={showAnimationHistorique} timeout={500}>
+                <div>
+                    <AnimatedHourglass show={showAnimationHistorique} duration={1100} />
+                </div>
+            </Fade>
+
+            <Fade in={showAnimationPresent} timeout={500}>
+                <div>
+                    <AnimatedMap show={showAnimationPresent} duration={1100} />
+                </div>
+            </Fade>
+
+            <Fade in={showAnimationEvolutions} timeout={500}>
+                <div>
+                    <AnimatedEvolution show={showAnimationEvolutions} duration={1100} />
+                </div>
+            </Fade>
+            {/*Gestion des différentes parties*/}
+            <Fade in={showAccueil} unmountOnExit={true}>
+                <Grid item xs={12}>
+                    <Grid container sx={{ gap: 60 }}>
+                        <Accueil handleClick={handleClick} />
+                    </Grid>
+                </Grid>
+            </Fade>
+
+            <Fade in={showPasse} unmountOnExit={true}>
+                <Grid item xs={12}>
+                    <Grid container sx={{ gap: 60 }}>
+                        <Passe handlePassee={handlePassee} />
+                    </Grid>
+                </Grid>
+            </Fade>
+
+            <Fade in={showHistorique} mountOnEnter={true} unmountOnExit={true}>
+                <Grid item xs={12}>
+                    <Grid container>
+                        <Historique handleHistorique={handleHistorique}/>
+                    </Grid>
+                </Grid>
+            </Fade>
+
+            <Fade in={showPresent} mountOnEnter={true} unmountOnExit={true}>
+                <Grid item xs={12}>
+                    <Grid container>
+                        <Present handlePresent={handlePresent} />
+                    </Grid>
+                </Grid>
+            </Fade>
+
+            <Fade in={showEvolutions} mountOnEnter={true} unmountOnExit={true}>
+                <Grid item xs={12}>
+                    <Grid container>
+                        <Evolutions />
+                    </Grid>
+                </Grid>
+            </Fade>
+        </Grid>
+    );
 }
