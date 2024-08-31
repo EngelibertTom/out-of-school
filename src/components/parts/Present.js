@@ -18,7 +18,7 @@ const Present = ({handlePresent}) => {
             <Grid item xs={12}>
                 <Map/>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} sx={{textAlign:"right", marginTop:3, marginBottom:3}}>
                 <Button sx={{
                     color: 'black',
                     border: 1,

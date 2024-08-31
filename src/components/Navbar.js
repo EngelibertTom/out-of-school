@@ -67,7 +67,7 @@ const NavBar = () => {
                     <Button className={anekDevanagari.className} color="inherit" href="/">
                         Accueil
                     </Button>
-                    <Button color="inherit" href="/historique">
+                    <Button color="inherit" href="/forum">
                         Forum INCYBER
                     </Button>
                     <Button color="inherit" onClick={handleMenuClick}>
