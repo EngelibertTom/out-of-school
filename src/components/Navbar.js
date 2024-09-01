@@ -70,7 +70,7 @@ const NavBar = () => {
                     <Button color="inherit" href="/forum">
                         Forum INCYBER
                     </Button>
-                    <Button color="inherit" onClick={handleMenuClick}>
+                    <Button color="inherit" href="/interview" onClick={handleMenuClick}>
                         Interview
                     </Button>
                 </Toolbar>
