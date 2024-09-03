@@ -9,7 +9,7 @@ import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 // import Slider from "react-slick";
 // import SliderComponent from "@/components/slider/slider";
 
-const PerceptionIA = ({handlePassee}) => {
+const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
     // Détection de la visibilité pour chaque section
     const { ref: techRef, inView: techVisible } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: fearsRef, inView: fearsVisible } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -222,19 +222,41 @@ const PerceptionIA = ({handlePassee}) => {
                                 </Grid>
                             </Fade>
                         </Grid>
-                        <Grid item xs={12} sx={{textAlign:"right"}}>
-                            <Button sx={{
-                                color: 'black',
-                                border: 1,
-                                borderColor: 'lightgrey',
-                                borderRadius: 2,
-                                padding: 1,
-                                paddingLeft: 2,
-                                paddingRight: 2,
-                                backgroundColor: 'white',
-                                position: 'relative',
-                            }} onClick={handlePassee}><strong>Suivant</strong></Button>
+                        <Grid item sx={{marginBottom:3}} xs={12}>
+                            <Grid container spacing={2}>
+                                <Grid item xs={6} sx={{textAlign:"left"}}>
+                                    <Button sx={{
+                                        color: 'black',
+                                        border: 1,
+                                        borderColor: 'lightgrey',
+                                        borderRadius: 2,
+                                        padding: 1,
+                                        paddingLeft: 2,
+                                        paddingRight: 2,
+                                        backgroundColor: 'white',
+                                        position: 'relative',
+                                    }} onClick={handlePrevPasse}><strong>Précédent</strong></Button>
+                                </Grid>
+                                <Grid item xs={6} sx={{textAlign:"right"}}>
+                                    <Button sx={{
+                                        color: 'black',
+                                        border: 1,
+                                        borderColor: 'lightgrey',
+                                        borderRadius: 2,
+                                        padding: 1,
+                                        paddingLeft: 2,
+                                        paddingRight: 2,
+                                        backgroundColor: 'white',
+                                        position: 'relative',
+                                    }} onClick={handlePassee}><strong>Suivant</strong></Button>
+                                </Grid>
+
+
+                            </Grid>
+
                         </Grid>
+
+
                     </Grid>
                 </Paper>
             </Grid>

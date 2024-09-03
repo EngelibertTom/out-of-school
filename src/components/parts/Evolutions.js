@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Grid, Typography, Button, Card, CardContent } from "@mui/material";
 
-const Evolutions = () => {
+const Evolutions = ({handlePrevEvolutions}) => {
     const [choices, setChoices] = useState([]);
     const [evaluation, setEvaluation] = useState(null);
 
@@ -224,6 +224,25 @@ const Evolutions = () => {
                         </Card>
                     </Grid>
                 )}
+                <Grid item xs={12}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={6} sx={{textAlign:"left"}}>
+                            <Button sx={{
+                                color: 'black',
+                                border: 1,
+                                borderColor: 'lightgrey',
+                                borderRadius: 2,
+                                padding: 1,
+                                paddingLeft: 2,
+                                paddingRight: 2,
+                                backgroundColor: 'white',
+                                position: 'relative',
+                            }} onClick={handlePrevEvolutions}><strong>Précédent</strong></Button>
+                        </Grid>
+
+                    </Grid>
+
+                </Grid>
             </Grid>
         </>
     );

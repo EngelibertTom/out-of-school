@@ -32,6 +32,7 @@ export default function Home() {
             setShowAnimationPerception(false);
             setShowPasse(true);
         }, 1500);
+        window.scrollTo(0, 0)
 
     };
 
@@ -42,7 +43,49 @@ export default function Home() {
             setShowAnimationHistorique(false);
             setShowHistorique(true);
         }, 1500);
+        window.scrollTo(0, 0)
     };
+
+    const handlePrevPasse = () => {
+        setShowPasse(false);
+        setShowAnimationPerception(true)
+        setTimeout(() => {
+            setShowAnimationPerception(false);
+            setShowAccueil(true)
+        }, 1500)
+        window.scrollTo(0, 0)
+    }
+
+    const handlePrevHistorique = () => {
+        setShowHistorique(false);
+        setShowAnimationPerception(true)
+        setTimeout(() => {
+            setShowAnimationPerception(false);
+            setShowPasse(true)
+        }, 1500)
+        window.scrollTo(0, 0)
+    }
+
+    const handlePrevPresent = () => {
+        setShowPresent(false);
+        setShowAnimationHistorique(true)
+        setTimeout(() => {
+            setShowAnimationHistorique(false);
+            setShowHistorique(true)
+        }, 1500)
+        window.scrollTo(0, 0)
+    }
+
+    const handlePrevEvolutions = () => {
+        setShowEvolutions(false);
+        setShowAnimationPresent(true)
+        setTimeout(() => {
+            setShowAnimationPresent(false);
+            setShowPresent(true)
+        }, 1500)
+        window.scrollTo(0, 0)
+    }
+
     const handleHistorique = () => {
         setShowHistorique(false);
         setShowAnimationPresent(true);
@@ -50,6 +93,7 @@ export default function Home() {
             setShowAnimationPresent(false);
             setShowPresent(true);
         }, 1500);
+        window.scrollTo(0, 0)
     };
 
     const handlePresent = () => {
@@ -59,6 +103,7 @@ export default function Home() {
             setShowAnimationEvolutions(false);
             setShowEvolutions(true);
         }, 1500);
+        window.scrollTo(0, 0)
 
     };
 
@@ -100,7 +145,7 @@ export default function Home() {
             <Fade in={showPasse} unmountOnExit={true}>
                 <Grid item xs={12}>
                     <Grid container sx={{ gap: 60 }}>
-                        <Passe handlePassee={handlePassee} />
+                        <Passe handlePassee={handlePassee} handlePrevPasse={handlePrevPasse} />
                     </Grid>
                 </Grid>
             </Fade>
@@ -108,7 +153,7 @@ export default function Home() {
             <Fade in={showHistorique} mountOnEnter={true} unmountOnExit={true}>
                 <Grid item xs={12}>
                     <Grid container>
-                        <Historique handleHistorique={handleHistorique}/>
+                        <Historique handleHistorique={handleHistorique} handlePrevHistorique={handlePrevHistorique} />
                     </Grid>
                 </Grid>
             </Fade>
@@ -116,7 +161,7 @@ export default function Home() {
             <Fade in={showPresent} mountOnEnter={true} unmountOnExit={true}>
                 <Grid item xs={12}>
                     <Grid container>
-                        <Present handlePresent={handlePresent} />
+                        <Present handlePresent={handlePresent} handlePrevPresent={handlePrevPresent} />
                     </Grid>
                 </Grid>
             </Fade>
@@ -124,7 +169,7 @@ export default function Home() {
             <Fade in={showEvolutions} mountOnEnter={true} unmountOnExit={true}>
                 <Grid item xs={12}>
                     <Grid container>
-                        <Evolutions />
+                        <Evolutions handlePrevEvolutions={handlePrevEvolutions} />
                     </Grid>
                 </Grid>
             </Fade>
