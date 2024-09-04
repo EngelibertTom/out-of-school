@@ -37,7 +37,7 @@ const Accueil = ({ handleClick}) => {
                         <strong>Interview Exclusive : L'IA dans le domaine militaire</strong>
                     </Typography>
                     <Typography variant="body1">
-                        Découvrez une interview approfondie avec un expert en intelligence artificielle qui discute des enjeux et des perspectives d'avenir de l'IA dans le domaine militaire.
+                        Découvrez une interview avec Thierry Berthier, expert en intelligence artificielle qui discute des enjeux et des perspectives d'avenir de l'IA dans le domaine militaire.
                     </Typography>
                     <Box sx={{ textAlign: 'center', mt: 2 }}>
                         <Button
@@ -65,10 +65,10 @@ const Accueil = ({ handleClick}) => {
             <Grid item xs={12}>
                 <Paper elevation={3} sx={{ p: 4, mb: 4 }}>
                     <Typography variant="h5" component="h2" sx={{ mb: 2 }}>
-                        <strong>Conférence : L'avenir de l'IA et de l'armement</strong>
+                        <strong>Table ronde sur les armes autonomes et la régulation militaire</strong>
                     </Typography>
                     <Typography variant="body1">
-                        Assistez à une conférence passionnante sur les implications de l'intelligence artificielle dans le futur des conflits armés et la sécurité internationale.
+                        Assistez à une conférence sur les implications de l'intelligence artificielle dans le futur des conflits armés et ses défis éthiques.
                     </Typography>
                     <Box sx={{ textAlign: 'center', mt: 2 }}>
                         <Button

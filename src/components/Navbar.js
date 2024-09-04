@@ -61,16 +61,34 @@ const NavBar = () => {
                 position="fixed"
             >
                 <Toolbar>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         <strong>IA et armement</strong>
                     </Typography>
-                    <Button className={anekDevanagari.className} color="inherit" href="/">
+                    <Button  sx={{
+                        fontSize: {
+                            xs: '0.75rem',
+                            sm: '0.875rem',
+                            md: '1rem',
+                        },
+                    }} className={anekDevanagari.className} color="inherit" href="/">
                         Accueil
                     </Button>
-                    <Button color="inherit" href="/forum">
+                    <Button sx={{
+                        fontSize: {
+                            xs: '0.75rem',
+                            sm: '0.875rem',
+                            md: '1rem',
+                        },
+                    }} color="inherit" href="/forum">
                         Forum INCYBER
                     </Button>
-                    <Button color="inherit" href="/interview" onClick={handleMenuClick}>
+                    <Button sx={{
+                        fontSize: {
+                            xs: '0.75rem',
+                            sm: '0.875rem',
+                            md: '1rem',
+                        },
+                    }} color="inherit" href="/interview" onClick={handleMenuClick}>
                         Interview
                     </Button>
                 </Toolbar>
