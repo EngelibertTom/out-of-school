@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <NavBar/>
-            <main style={{paddingTop:"3%"}}>
+            <main style={{marginTop:"10%"}}>
                 {children}
             </main>
         </ThemeProvider>
