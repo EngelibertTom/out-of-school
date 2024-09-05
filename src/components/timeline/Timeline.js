@@ -9,11 +9,11 @@ const Timeline = () => {
         <>
             <div>
                 <Grid container spacing={2} sx={{ marginTop: 1, marginBottom: 8 }}>
-                    <Grid item sx={{ display: "flex", alignItems: "center", gap: 1 }} xs={6}>
+                    <Grid item sx={{ display: "flex", alignItems: "center", gap: 1 }} xs={12} sm={12} lg={6}>
                         <span style={{ backgroundColor: 'rgb(33, 150, 243)', padding: '5px 10px', color: '#fff', borderRadius: '5px' }}>IA générale</span>
                         <p>: Événements majeurs liés à l'intelligence artificielle en général.</p>
                     </Grid>
-                    <Grid item xs={6} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                    <Grid item xs={12} sm={12} lg={6} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                         <span style={{ backgroundColor: 'rgb(233, 30, 99)', padding: '5px 10px', color: '#fff', borderRadius: '5px' }}>IA dans l'armement</span>
                         <p>: Développements de l'IA dans les applications militaires.</p>
                     </Grid>
@@ -93,7 +93,7 @@ const Timeline = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Les années 1970 ont vu des progrès significatifs dans le traitement du langage naturel (NLP), avec le développement de systèmes capables de comprendre et de répondre à des commandes en langage humain.
+                                Les années 1970 ont vu des progrès importants dans le traitement du langage naturel (NLP), avec le développement de systèmes capables de comprendre et de répondre à des commandes en langage humain.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -119,7 +119,7 @@ const Timeline = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Les années 1980 ont vu une augmentation de l'intégration de l'IA dans les systèmes d'armes sophistiqués, tels que les missiles guidés et les radars capables de détecter et de suivre des cibles avec une grande précision.
+                                Les années 1980 ont vu une augmentation de l'intégration de l'IA dans les systèmes d'armes, comme les missiles guidés et les radars capables de détecter et de suivre des cibles avec précision.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -135,7 +135,6 @@ const Timeline = () => {
                     visible={true}
                 >
                     <h3 className="vertical-timeline-element-title">Guerre électronique et systèmes d'alerte</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Monde</h4>
                     <p>
                         L'IA joue un rôle crucial dans la guerre électronique et les systèmes d'alerte précoce.
                     </p>
@@ -145,7 +144,7 @@ const Timeline = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Durant les années 1990, l'IA est devenue un élément clé dans la guerre électronique, améliorant les capacités de brouillage, de détection et de réponse rapide à des menaces potentiellement fatales.
+                                Durant les années 1990, l'IA est devenue un élément clé dans les guerre, améliorant les capacités de brouillage, de détection et de réponse rapide aux menaces.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -164,7 +163,7 @@ const Timeline = () => {
                     <h3 className="vertical-timeline-element-title">Développement de drones et robots militaires</h3>
                     <h4 className="vertical-timeline-element-subtitle">Monde</h4>
                     <p>
-                        Utilisation de l'IA pour créer des drones et des robots capables de missions autonomes.
+                        Utilisation de l'IA pour créer des drones et des robots capables de missions.
                     </p>
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>

@@ -11,11 +11,11 @@ const Evolutions = ({handlePrevEvolutions}) => {
             options: ["Autoriser", "Interdire"],
             details: {
                 "Autoriser": {
-                    advantages: "Peut augmenter l'efficacité des opérations militaires et réduire les pertes humaines pour les forces armées.",
-                    disadvantages: "Risques de réactions imprévisibles, pertes civiles, et problèmes éthiques liés à la délégation de décisions létales à des machines."
+                    advantages: "Peut augmenter l'efficacité des opérations militaires et réduire les pertes humaines",
+                    disadvantages: "Risques de réactions imprévisibles, pertes civiles, et problèmes éthiques liés a la régulation."
                 },
                 "Interdire": {
-                    advantages: "Réduit les risques de bavures et de violations des droits de l'homme, et facilite la responsabilité légale.",
+                    advantages: "Réduit les risques d'accidents",
                     disadvantages: "Peut limiter les avancées technologiques et les avantages stratégiques des forces armées."
                 }
             }
@@ -39,7 +39,7 @@ const Evolutions = ({handlePrevEvolutions}) => {
             options: ["Développer", "Interdire"],
             details: {
                 "Développer": {
-                    advantages: "Peut offrir des avantages stratégiques et améliorer la réactivité des systèmes de défense.",
+                    advantages: "Peut offrir des avantages stratégiques.",
                     disadvantages: "Risque d'accidents et d'erreurs, coûts élevés de développement et de maintenance."
                 },
                 "Interdire": {
@@ -49,12 +49,12 @@ const Evolutions = ({handlePrevEvolutions}) => {
             }
         },
         {
-            question: "Réguler strictement les algorithmes de prise de décision",
+            question: "Réguler les algorithmes de prise de décision",
             options: ["Réguler", "Laisser Libre"],
             details: {
                 "Réguler": {
                     advantages: "Assure la transparence, l'équité et la responsabilité des algorithmes.",
-                    disadvantages: "Peut ralentir l'innovation et imposer des coûts de conformité élevés aux entreprises."
+                    disadvantages: "Peut ralentir l'innovation et imposer des coûts de élevés aux entreprises."
                 },
                 "Laisser Libre": {
                     advantages: "Favorise l'innovation rapide et réduit les coûts de conformité.",
@@ -95,11 +95,11 @@ const Evolutions = ({handlePrevEvolutions}) => {
             options: ["Créer", "Ne pas créer"],
             details: {
                 "Créer": {
-                    advantages: "Favorise la coopération mondiale, réduit les risques de conflits et promeut la paix.",
+                    advantages: "Favorise la coopération mondiale, et réduit les risques de conflits ",
                     disadvantages: "Nécessite un engagement et une conformité mondiale, ce qui peut être difficile à obtenir."
                 },
                 "Ne pas créer": {
-                    advantages: "Évite les complications diplomatiques et les engagements internationaux contraignants.",
+                    advantages: "Évite les engagements internationaux contraignants.",
                     disadvantages: "Augmente les risques de conflits et de développement non contrôlé des IA militaires."
                 }
             }
