@@ -11,11 +11,11 @@ const Timeline = () => {
                 <Grid container spacing={2} sx={{ marginTop: 1, marginBottom: 8 }}>
                     <Grid item sx={{ display: "flex", alignItems: "center", gap: 1 }} xs={12} sm={12} lg={6}>
                         <span style={{ backgroundColor: 'rgb(33, 150, 243)', padding: '5px 10px', color: '#fff', borderRadius: '5px' }}>IA générale</span>
-                        <p>: Événements majeurs liés à l'intelligence artificielle en général.</p>
+                        <p>: Évolution de l'intelligence artificielle en général.</p>
                     </Grid>
                     <Grid item xs={12} sm={12} lg={6} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                         <span style={{ backgroundColor: 'rgb(233, 30, 99)', padding: '5px 10px', color: '#fff', borderRadius: '5px' }}>IA dans l'armement</span>
-                        <p>: Développements de l'IA dans les applications militaires.</p>
+                        <p>: Évolution de l'IA dans l'armement.</p>
                     </Grid>
                 </Grid>
             </div>
