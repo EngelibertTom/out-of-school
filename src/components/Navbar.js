@@ -91,6 +91,15 @@ const NavBar = () => {
                     }} color="inherit" href="/interview" onClick={handleMenuClick}>
                         Interview
                     </Button>
+                    <Button sx={{
+                        fontSize: {
+                            xs: '0.75rem',
+                            sm: '0.875rem',
+                            md: '1rem',
+                        },
+                    }} color="inherit" href="/lexique" onClick={handleMenuClick}>
+                        Lexique
+                    </Button>
                 </Toolbar>
             </AppBar>
         </>

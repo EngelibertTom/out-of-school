@@ -165,7 +165,7 @@ export default function Interview() {
                 <Fade in={thirdQuestionInView} timeout={1000}>
                 <div ref={thirdQuestionRef}>
                     <Typography variant="h6" component="h3" sx={{ mb: 2, fontWeight: 'bold' }}>
-                        L’armée française est-elle en mesure de nous protéger contre une attaque de drone MTO ou téléopéré ?
+                        L’armée française est-elle en mesure de nous protéger contre une attaque de drone MTO ?
                     </Typography>
                     <Typography paragraph>
                         Monsieur Berthier explique que ce qui est évoqué est la LAD, la lutte anti-drone, et que pour tous les pays, la LAD est un sujet compliqué.
