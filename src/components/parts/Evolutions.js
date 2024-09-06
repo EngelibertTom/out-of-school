@@ -132,16 +132,16 @@ const Evolutions = ({handlePrevEvolutions}) => {
 
         // Detailed results
         const stabilityDetail = stability === "Plus stable"
-            ? "L'interdiction des armes autonomes, la régulation stricte et l'investissement dans l'éthique contribuent à une plus grande stabilité internationale en réduisant les risques d'escalade militaire."
-            : "L'autorisation de l'IA militaire et le manque de régulation peuvent entraîner une instabilité en augmentant les tensions et les risques de conflits.";
+            ? "L'interdiction des armes autonomes, la régulation stricte et l'investissement dans l'éthique aident à avoir une plus grande stabilité internationale en réduisant les risques de conflits suite à la course à l'innovation."
+            : "L'autorisation de l'IA militaire et le manque de régulation peuvent entraîner une course à l'innovation technologique et créer des risques de conflits.";
 
         const ethicsDetail = ethics === "Plus éthique"
             ? "La régulation, l'investissement dans l'éthique et la surveillance contribuent à une utilisation plus responsable et éthique de l'IA dans les armements."
-            : "Les choix permettant le développement non régulé et l'absence d'investissement dans l'éthique peuvent mener à des abus et des violations des droits de l'homme.";
+            : "Les choix permettant le développement non régulé et l'absence d'investissement dans l'éthique peuvent mener à des abus.";
 
         const conflictDetail = conflict === "Plus conflictuel"
-            ? "Permettre le développement non contrôlé des IA militaires peut intensifier les conflits et les tensions géopolitiques."
-            : "La régulation et la coopération internationale aident à réduire les risques de conflits et favorisent la paix.";
+            ? "Permettre le développement non régulé des IA militaires peut intensifier les conflits et les tensions entre les pays."
+            : "La régulation et l'acceptation de normes communes aident à réduire les risques de conflits et favorisent un développement sans risque de conflit.";
 
         setEvaluation({ stability, ethics, conflict, stabilityDetail, ethicsDetail, conflictDetail });
     };
@@ -157,7 +157,7 @@ const Evolutions = ({handlePrevEvolutions}) => {
                         L'intelligence artificielle (IA) joue un rôle de plus en plus important dans le domaine militaire.
                         Des drones autonomes aux systèmes de défense intelligents, les applications de l'IA dans l'armement
                         présentent des avantages mais aussi des défis éthiques et de sécurité.
-                        Cette évolution rapide soulève des questions cruciales sur la régulation et l'éthique,
+                        Cette évolution rapide engendre des questions importantes sur la régulation et l'éthique,
                         qui détermineront l'avenir de l'IA et des armements.
                     </Typography>
                     <Typography sx={{ paddingLeft: 2, marginTop: 4 }} component="h2" variant="h5">
@@ -212,13 +212,13 @@ const Evolutions = ({handlePrevEvolutions}) => {
                                 <Typography variant="body1">Éthique : {evaluation.ethics}</Typography>
                                 <Typography variant="body1">Conflit : {evaluation.conflict}</Typography>
                                 <Typography variant="body1" sx={{ marginTop: 2 }}>
-                                    <strong>Détails sur la Stabilité :</strong> {evaluation.stabilityDetail}
+                                    <strong>Détails sur la stabilité :</strong> {evaluation.stabilityDetail}
                                 </Typography>
                                 <Typography variant="body1" sx={{ marginTop: 2 }}>
-                                    <strong>Détails sur l'Éthique :</strong> {evaluation.ethicsDetail}
+                                    <strong>Détails sur l'éthique :</strong> {evaluation.ethicsDetail}
                                 </Typography>
                                 <Typography variant="body1" sx={{ marginTop: 2 }}>
-                                    <strong>Détails sur le Conflit :</strong> {evaluation.conflictDetail}
+                                    <strong>Détails sur le conflit :</strong> {evaluation.conflictDetail}
                                 </Typography>
                             </CardContent>
                         </Card>

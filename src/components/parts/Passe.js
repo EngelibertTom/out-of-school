@@ -25,7 +25,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
         <Grid container spacing={4} sx={{ padding: 4}}>
             <Grid item xs={12}>
                 <Typography component="h1" variant="h4" align="center" sx={{ marginBottom: 4 }}>
-                    Perception de l'IA et de la Robotique avant sa concrétisation
+                    Perception de l'IA et de la robotique avant sa concrétisation
                 </Typography>
             </Grid>
 
@@ -35,7 +35,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                         <Avatar sx={{ bgcolor: '#1976d2', margin: 'auto', marginBottom: 2 }}>
                             <EngineeringIcon />
                         </Avatar>
-                        <Typography variant="h6"><strong>Un Progrès Technologique</strong></Typography>
+                        <Typography variant="h6"><strong>Un progrès technologique</strong></Typography>
                         <Typography variant="body1">
                             L'IA et la robotique étaient perçues comme le prochain grand bond technologique qui allait améliorer la qualité de vie et résoudre des problèmes complexes. On imaginait des robots bienveillants aidant au quotidien, libérant les humains pour des activités plus créatives et intellectuelles.
                         </Typography>
@@ -49,7 +49,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                         <Avatar sx={{ bgcolor: '#f44336', margin: 'auto', marginBottom: 2 }}>
                             <WarningIcon />
                         </Avatar>
-                        <Typography variant="h6"><strong>Craintes et Scepticisme</strong></Typography>
+                        <Typography variant="h6"><strong>Craintes et scepticisme</strong></Typography>
                         <Typography variant="body1">
                             Une peur courante était que les machines deviennent trop puissantes et autonomes, surpassant l'intelligence humaine. On craignait également que l'automatisation remplace les travailleurs humains, et que les machines prennent des décisions éthiques.
                         </Typography>
@@ -63,7 +63,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                         <Avatar sx={{ bgcolor: '#4caf50', margin: 'auto', marginBottom: 2 }}>
                             <PsychologyIcon />
                         </Avatar>
-                        <Typography variant="h6"><strong>Aspect Philosophique</strong></Typography>
+                        <Typography variant="h6"><strong>Aspect philosophique</strong></Typography>
                         <Typography variant="body1">
                             Avant même que l'IA soit réalisable, les philosophes se demandaient si une machine pouvait penser ou être consciente. Beaucoup doutaient que l'IA puisse imiter l'intelligence humaine en raison de la complexité de l'esprit humain et des émotions.
                         </Typography>
@@ -84,7 +84,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs>
-                                            <Typography variant="h6"><strong>De l'Antiquité à nos jours</strong></Typography>
+                                            <Typography variant="h6"><strong>De l'antiquité à nos jours</strong></Typography>
                                         </Grid>
                                     </Grid>
                                     <Typography variant="body1" sx={{ marginTop: 2 }}>
@@ -99,7 +99,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                             <Fade in={mythVisible} timeout={1000}>
                                 <Grid container sx={{ marginBottom: 5 }}>
                                     <Grid item xs={12} md={6} sx={{ paddingRight: 2 }}>
-                                        <Typography variant="h6"><strong>Mythologie Ancienne :</strong></Typography>
+                                        <Typography variant="h6"><strong>Mythologie ancienne :</strong></Typography>
                                         <Typography variant="body1" sx={{ marginTop: 2 }}>
                                             Dans la mythologie grecque, Talos était un géant de bronze créé par Héphaïstos, le dieu forgeron, pour protéger l'île de Crète. Ce robot primitif représentait déjà l'idée d'une machine protectrice et autonome.
                                             Le Golem, une créature d'argile animée par des incantations, était censé protéger la communauté juive. Ce mythe explore les thèmes de la création et des limites du pouvoir humain.
@@ -147,7 +147,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                                             order: { xs: 1, md: 2 }
                                         }}
                                     >
-                                        <Typography variant="h6"><strong>Renaissance et Lumières :</strong></Typography>
+                                        <Typography variant="h6"><strong>Renaissance et lumières :</strong></Typography>
                                         <Typography variant="body1" sx={{ marginTop: 2 }}>
                                             Au 16ème et 17ème siècles, les inventeurs européens créèrent des automates complexes, capables d'imiter les mouvements humains ou animaux. Le philosophe René Descartes considérait les animaux comme des "machines" complexes, un concept qui ouvrait la voie à l'idée que les humains pourraient, un jour, créer des êtres mécaniques pensants.
                                         </Typography>
@@ -160,9 +160,9 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                             <Fade in={modernVisible} timeout={1000}>
                                 <Grid container sx={{ marginBottom: 5 }}>
                                     <Grid item  xs={12} md={6} sx={{ paddingRight: 2 }}>
-                                        <Typography variant="h6"><strong>Époque Moderne :</strong></Typography>
+                                        <Typography variant="h6"><strong>Époque moderne :</strong></Typography>
                                         <Typography variant="body1" sx={{ marginTop: 2 }}>
-                                            Le roman "Frankenstein" de Mary Shelley est souvent considéré comme la première œuvre de science-fiction moderne. Le terme "intelligence artificielle" a été formellement introduit par John McCarthy en 1956, tandis qu'Isaac Asimov a popularisé l'idée de robots éthiques dans "I, Robot".
+                                            Le roman "Frankenstein" de Mary Shelley est souvent considéré comme la première œuvre de science-fiction moderne. Le terme "intelligence artificielle" a été introduit par John McCarthy en 1956, et Isaac Asimov a popularisé l'idée de robots éthiques dans "I, Robot".
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} md={6} sx={{
@@ -192,9 +192,9 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                                     }}>
                                     </Grid>
                                     <Grid item xs={12} md={6} sx={{ paddingLeft: 2,  order: { xs: 1, md: 2} }}>
-                                        <Typography variant="h6"><strong>Culture Populaire du 20ème siècle :</strong></Typography>
+                                        <Typography variant="h6"><strong>Culture populaire du 20ème siècle :</strong></Typography>
                                         <Typography variant="body1" sx={{ marginTop: 2 }}>
-                                            Des œuvres comme "2001 : L'Odyssée de l'Espace" de Stanley Kubrick et "Blade Runner" de Ridley Scott ont approfondi les questions sur l'autonomie des machines et les limites de l'intelligence artificielle. JARVIS, l'assistant AI de Tony Stark dans les films Iron Man, illustre une vision plus optimiste d'une IA au service des humains.
+                                            Des œuvres comme "2001 : L'Odyssée de l'Espace" de Stanley Kubrick et "Blade Runner" de Ridley Scott ont approfondi les questions sur l'autonomie des machines et les limites de l'intelligence artificielle. JARVIS, l'assistant AI de Tony Stark dans les films Iron Man, montre une vision plus optimiste d'une IA au service des humains.
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -207,7 +207,7 @@ const PerceptionIA = ({handlePassee, handlePrevPasse}) => {
                                     <Grid item xs={12} md={6} sx={{ paddingRight: 2 }}>
                                         <Typography variant="h6"><strong>21ème siècle et au-delà :</strong></Typography>
                                         <Typography variant="body1" sx={{ marginTop: 2 }}>
-                                            Le jeu vidéo "Detroit: Become Human" explore un futur où les androïdes développent des émotions, soulevant des questions éthiques sur la nature de l'humanité. De nos jours, l'IA est déjà intégrée dans la vie quotidienne à travers des assistants vocaux comme Siri ou Alexa, mais les débats sur l'éthique, la vie privée et l'impact social continuent.
+                                            Le jeu vidéo "Detroit: Become Human" montre un futur où les androïdes développent des émotions, posant des questions éthiques sur la nature humaine. De nos jours, l'IA est déjà intégrée dans la vie quotidienne grace a des assistants vocaux comme Siri ou Alexa, mais les débats sur l'éthique, la vie privée et l'impact social continuent.
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} md={6} sx={{

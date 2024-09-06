@@ -31,7 +31,7 @@ const Timeline = () => {
                     visible={true}
                 >
                     <h3 className="vertical-timeline-element-title">Naissance de l'IA</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Conférence de Dartmouth</h4>
+                    <h4 className="vertical-timeline-element-subtitle">Conférence de dartmouth</h4>
                     <p>
                         Le terme "intelligence artificielle" est officiellement introduit.
                     </p>
@@ -41,7 +41,7 @@ const Timeline = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                La conférence de Dartmouth, organisée en 1956 par John McCarthy, est largement considérée comme le point de départ officiel de la recherche sur l'intelligence artificielle. Ce fut lors de cette conférence que le terme "intelligence artificielle" a été utilisé pour la première fois.
+                                La conférence de Dartmouth, organisée en 1956 par John McCarthy, est considérée comme le point de départ officiel de la recherche sur l'intelligence artificielle. Ce fut lors de cette conférence que le terme "intelligence artificielle" a été utilisé pour la première fois.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -67,7 +67,7 @@ const Timeline = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Durant les années 1960, les États-Unis ont commencé à intégrer des systèmes d'IA rudimentaires dans les technologies militaires, notamment pour le contrôle des missiles balistiques et les simulations de stratégie militaire.
+                                Durant les années 1960, les États-Unis ont commencé à intégrer des systèmes d'IA dans les technologies militaires, notamment pour le contrôle des missiles et les simulations de stratégie militaire.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -108,7 +108,7 @@ const Timeline = () => {
                     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                     visible={true}
                 >
-                    <h3 className="vertical-timeline-element-title">Intégration de l'IA dans les armes avancées</h3>
+                    <h3 className="vertical-timeline-element-title">Intégration de l'IA dans les armes</h3>
                     <h4 className="vertical-timeline-element-subtitle">États-Unis</h4>
                     <p>
                         Développement des systèmes d'armement avancés comme les missiles guidés et les radars.
@@ -212,7 +212,7 @@ const Timeline = () => {
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     visible={true}
                 >
-                    <h3 className="vertical-timeline-element-title">Sophistication accrue des technologies d'IA</h3>
+                    <h3 className="vertical-timeline-element-title">Amélioration des technologies d'IA</h3>
                     <h4 className="vertical-timeline-element-subtitle">Monde</h4>
                     <p>
                         Amélioration des capacités d'apprentissage automatique et de traitement du langage naturel.
@@ -275,7 +275,7 @@ const Timeline = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                En 2024, les IA génératives ont atteint un niveau de sophistication tel qu'elles ont commencé à transformer non seulement la création de contenu numérique, mais aussi la manière dont la créativité humaine est perçue et utilisée dans divers domaines.
+                                En 2024, les IA génératives ont atteint un niveau assez élevé, elles ont commencé à transformer non seulement la création de contenu numérique, mais aussi la manière dont la créativité humaine est perçue et utilisée dans divers domaines.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
